@@ -1,0 +1,508 @@
+{
+    "shippingMethods" :[
+        {
+            "id": 5,
+            "name": "Domicilio - Siguiente Dia Habil - Local",
+            "description": "Domicilio - Siguiente Dia Habil - Local",
+            "code": "MSM-AD-0004",
+            "shipping_type": "Delivery",
+            "rules": {
+                "availability": {
+                    "byWeight": {
+                        "min": 0,
+                        "max": 20
+                    },
+                    "byRequestTime": {
+                        "dayType": "ANY",
+                        "fromTimeOfDay": 0,
+                        "toTimeOfDay": 24
+                    },
+                    "byWarehouseCoverage": {
+                        "type": "LOCAL"
+                    }
+                },
+                "promisesParameters": {
+                    "cases": [
+                        {
+                            "priority": 1,
+                            "condition": {
+                                "byRequestTime": {
+                                    "dayType": "ANY",
+                                    "fromTimeOfDay": 0,
+                                    "toTimeOfDay": 24
+                                }
+                            },
+                            "packPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 1,
+                                    "timeOfDay": 16
+                                }
+                            },
+                            "shipPromise": {
+                                "min": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 1,
+                                    "timeOfDay": 8
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 1,
+                                    "timeOfDay": 17
+                                }
+                            },
+                            "deliveryPromise": {
+                                "min": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 1,
+                                    "timeOfDay": 8
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 1,
+                                    "timeOfDay": 20
+                                }
+                            },
+                            "readyPickUpPromise": {
+                                "min": {
+                                    "type": "NULL"
+                                },
+                                "max": {
+                                    "type": "NULL"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": 3,
+            "name": "Domicilio - Express - Local",
+            "description": "Domicilio - Express - Local",
+            "code": "MSM-AD-0002",
+            "shipping_type": "Delivery",
+            "rules": {
+                "availability": {
+                    "byWeight": {
+                        "min": 0,
+                        "max": 20
+                    },
+                    "byRequestTime": {
+                        "dayType": "BUSINESS",
+                        "fromTimeOfDay": 0,
+                        "toTimeOfDay": 14
+                    },
+                    "byWarehouseCoverage": {
+                        "type": "LOCAL"
+                    }
+                },
+                "promisesParameters": {
+                    "cases": [
+                        {
+                            "priority": 1,
+                            "condition": {
+                                "byRequestTime": {
+                                    "dayType": "ANY",
+                                    "fromTimeOfDay": 0,
+                                    "toTimeOfDay": 24
+                                }
+                            },
+                            "packPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 1
+                                }
+                            },
+                            "shipPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 1
+                                }
+                            },
+                            "deliveryPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 2
+                                }
+                            },
+                            "readyPickUpPromise": {
+                                "min": {
+                                    "type": "NULL"
+                                },
+                                "max": {
+                                    "type": "NULL"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": 4,
+            "name": "Domicilio - Hoy - Local",
+            "description": "Domicilio - Hoy - Local",
+            "code": "MSM-AD-0003",
+            "shipping_type": "Delivery",
+            "rules": {
+                "availability": {
+                    "byWeight": {
+                        "min": 0,
+                        "max": 20
+                    },
+                    "byRequestTime": {
+                        "dayType": "BUSINESS",
+                        "fromTimeOfDay": 0,
+                        "toTimeOfDay": 14
+                    },
+                    "byWarehouseCoverage": {
+                        "type": "LOCAL"
+                    }
+                },
+                "promisesParameters": {
+                    "cases": [
+                        {
+                            "priority": 1,
+                            "condition": {
+                                "byRequestTime": {
+                                    "dayType": "ANY",
+                                    "fromTimeOfDay": 0,
+                                    "toTimeOfDay": 24
+                                }
+                            },
+                            "packPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 0,
+                                    "timeOfDay": 16
+                                }
+                            },
+                            "shipPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 0,
+                                    "timeOfDay": 17
+                                }
+                            },
+                            "deliveryPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 0,
+                                    "timeOfDay": 20
+                                }
+                            },
+                            "readyPickUpPromise": {
+                                "min": {
+                                    "type": "NULL"
+                                },
+                                "max": {
+                                    "type": "NULL"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": 6,
+            "name": "Envio Nacional",
+            "description": "Envio Nacional",
+            "code": "MSM-AD-0005",
+            "shipping_type": "Delivery",
+            "rules": {
+                "availability": {
+                    "byWeight": {
+                        "min": 0,
+                        "max": 10000
+                    },
+                    "byRequestTime": {
+                        "dayType": "ANY",
+                        "fromTimeOfDay": 0,
+                        "toTimeOfDay": 24
+                    },
+                    "byWarehouseCoverage": {
+                        "type": "NATIONAL"
+                    }
+                },
+                "promisesParameters": {
+                    "cases": [
+                        {
+                            "priority": 1,
+                            "condition": {
+                                "byRequestTime": {
+                                    "dayType": "BUSINESS",
+                                    "fromTimeOfDay": 0,
+                                    "toTimeOfDay": 14
+                                }
+                            },
+                            "packPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 0,
+                                    "timeOfDay": 17
+                                }
+                            },
+                            "shipPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 0,
+                                    "timeOfDay": 18
+                                }
+                            },
+                            "deliveryPromise": {
+                                "min": {
+                                    "type": "NULL"
+                                },
+                                "max": {
+                                    "type": "NULL"
+                                }
+                            },
+                            "readyPickUpPromise": {
+                                "min": {
+                                    "type": "NULL"
+                                },
+                                "max": {
+                                    "type": "NULL"
+                                }
+                            }
+                        },
+                        {
+                            "priority": 2,
+                            "condition": {
+                                "byRequestTime": {
+                                    "dayType": "ANY",
+                                    "fromTimeOfDay": 0,
+                                    "toTimeOfDay": 24
+                                }
+                            },
+                            "packPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 1,
+                                    "timeOfDay": 17
+                                }
+                            },
+                            "shipPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 1,
+                                    "timeOfDay": 18
+                                }
+                            },
+                            "deliveryPromise": {
+                                "min": {
+                                    "type": "NULL"
+                                },
+                                "max": {
+                                    "type": "NULL"
+                                }
+                            },
+                            "readyPickUpPromise": {
+                                "min": {
+                                    "type": "NULL"
+                                },
+                                "max": {
+                                    "type": "NULL"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": 2,
+            "name": "Recogida @ Melonn - Siguiente Dia Habil",
+            "description": "Recogida @ Melonn - Siguiente Dia Habil",
+            "code": "MSM-PM-0002",
+            "shipping_type": "Pickup at Melonn",
+            "rules": {
+                "availability": {
+                    "byWeight": {
+                        "min": 0,
+                        "max": 100
+                    },
+                    "byRequestTime": {
+                        "dayType": "ANY",
+                        "fromTimeOfDay": 0,
+                        "toTimeOfDay": 24
+                    },
+                    "byWarehouseCoverage": {
+                        "type": "ALL"
+                    }
+                },
+                "promisesParameters": {
+                    "cases": [
+                        {
+                            "priority": 1,
+                            "condition": {
+                                "byRequestTime": {
+                                    "dayType": "ANY",
+                                    "fromTimeOfDay": 0,
+                                    "toTimeOfDay": 24
+                                }
+                            },
+                            "packPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 1,
+                                    "timeOfDay": 10
+                                }
+                            },
+                            "shipPromise": {
+                                "min": {
+                                    "type": "NULL"
+                                },
+                                "max": {
+                                    "type": "NULL"
+                                }
+                            },
+                            "deliveryPromise": {
+                                "min": {
+                                    "type": "NULL"
+                                },
+                                "max": {
+                                    "type": "NULL"
+                                }
+                            },
+                            "readyPickUpPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-BUSINESSDAYS",
+                                    "deltaBusinessDays": 1,
+                                    "timeOfDay": 10
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": 1,
+            "name": "Recogida @ Melonn - HOY",
+            "description": "Recogida @ Melonn - HOY",
+            "code": "MSM-PM-0001",
+            "shipping_type": "Pickup at Melonn",
+            "rules": {
+                "availability": {
+                    "byWeight": {
+                        "min": 0,
+                        "max": 100
+                    },
+                    "byRequestTime": {
+                        "dayType": "BUSINESS",
+                        "fromTimeOfDay": 0,
+                        "toTimeOfDay": 14
+                    },
+                    "byWarehouseCoverage": {
+                        "type": "ALL"
+                    }
+                },
+                "promisesParameters": {
+                    "cases": [
+                        {
+                            "priority": 1,
+                            "condition": {
+                                "byRequestTime": {
+                                    "dayType": "ANY",
+                                    "fromTimeOfDay": 0,
+                                    "toTimeOfDay": 24
+                                }
+                            },
+                            "packPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 2
+                                }
+                            },
+                            "shipPromise": {
+                                "min": {
+                                    "type": "NULL"
+                                },
+                                "max": {
+                                    "type": "NULL"
+                                }
+                            },
+                            "deliveryPromise": {
+                                "min": {
+                                    "type": "NULL"
+                                },
+                                "max": {
+                                    "type": "NULL"
+                                }
+                            },
+                            "readyPickUpPromise": {
+                                "min": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 0
+                                },
+                                "max": {
+                                    "type": "DELTA-HOURS",
+                                    "deltaHours": 2
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+  "2acf76e3-6874-49ce-b22e-76239c94f3e8": {
+    "sellerStore": "xxx-xxxx",
+    "shippingMethod": 1,
+    "externalOrderNumber": "676-776",
+    "buyerFullname": "Cristian Mendoza",
+    "buyerPhoneNumber": "000-87877",
+    "buyerEmail": "1868@holbertonschool.com",
+    "shippingAddress": "mnz 1 bloq 15 trr 3 apto 301",
+    "shippingCity": "sincelejo",
+    "shippingRegion": "sucre",
+    "shippingCountry": "colombia",
+    "listOfItems": [
+      {
+        "productName": "xxx-xxx",
+        "productQty": "2",
+        "productWeight": "5"
+      }
+    ],
+    "internalOrderNumber": 1614569532,
+    "shippingMethodRules": {
+      "pack_promise_min": "2021-03-02 at 12:00 am",
+      "pack_promise_max": "2021-03-02 at 12:00 am",
+      "ship_promise_min": "NULL",
+      "ship_promise_max": "NULL",
+      "delivery_promise_min": "NULL",
+      "delivery_promise_max": "NULL",
+      "ready_pickup_promise_min": "2021-03-02 at 12:00 am",
+      "ready_pickup_promise_max": "2021-03-02 at 12:00 am"
+    },
+    "creationDate": "2021-03-01"
+  }
+}
